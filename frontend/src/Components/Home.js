@@ -17,7 +17,7 @@ const Home = () => {
 
       const data = await response.json();
       setProducts(data);
-      setCurrentPage(1); // Reset current page to 1 after fetching new data
+      setCurrentPage(1);
     } catch (error) {
       console.error('Error:', error.message);
     }
